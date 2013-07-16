@@ -42,6 +42,7 @@ void LoadHumans()
 		double conversion1 = atof(temp[2].c_str());
 		double conversion2 = atof(temp[3].c_str());
 		human[0].Setup(temp[0], temp[1], conversion1, conversion2);
+		// Do you think you can change your code to avoid repeating the same block of codes?
 	//-------------------------------------
 		myFile.getline(charArray, 20);
 		temp[i] = string(charArray);
