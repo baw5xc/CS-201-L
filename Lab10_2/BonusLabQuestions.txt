@@ -1,0 +1,17 @@
+
+1.What would happen if we create a vector of size 10 and the vector is already filled up and we want to push a new item?
+
+
+A: When you add an element to a vector, it is pushed to the last position in the vector. If the vector is full, then its size is increased by one.
+
+
+
+2. In a stack, let’s say we have entered four items, “John”, “Mary”, “Jack”, “Robert”. If we pop for the first time, which item will pop out?
+
+A: A stack operates like "last in, first out", so by popping the first time, then "Robert will pop out.
+
+
+
+3. If the same four items are stored in the queue, which item will pop out?
+
+A: The item that was the last entered in the queue.
