@@ -33,7 +33,7 @@ int main()
 		
 	}
 
-	Item* userSelection = new Item[itemsPurch+1];
+	Item* userSelection = new Item[itemsPurch+1]; // itemsPurch isn't defined yet!
 	cout << endl << endl;
 	int selection;
 	double total = 0;
@@ -56,7 +56,7 @@ int main()
 			Item* newUserArray = new Item[itemsPurch + 2];      // creating new array of size greater than the original array that stored data
 			for (int i = 0; i < itemsPurch + 1; i++)
 			{
-				newUserArray[i] = userSelection[i];
+				newUserArray[i] = userSelection[i];		//Comment: at last iteration, this  line will generate an error.
 			}
 			newUserArray[itemsPurch + 1] = items[selection -1]; // stores new data into the LAST element of the newly defined array
 			userSelection = newUserArray;                       // puts the newly defined array BACK into the original array we used to store the data
