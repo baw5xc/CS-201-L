@@ -36,7 +36,7 @@ int main()
 	int selection;
 	double total = 0;
 	int itemsPurch = 0;
-	string finish = "no";
+	string finish = "no"; // use bool finish = false; this is common practice and the program runs faster.
 	while (finish == "no")
 	{
 		cout << "Choose your selection" << endl;

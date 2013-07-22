@@ -50,3 +50,5 @@ void operator>>(istream& in, Item& item)
 		price = atof(y_price.c_str());
 		item.setPrice(price);
 }
+
+// where is the definition of print() function?
