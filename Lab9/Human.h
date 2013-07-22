@@ -11,7 +11,7 @@ class Human: public Animal
 public:
 	Human();
 	Human(string speciesName);
-	void Action();
+	void Action(); // specify it as virtual
 
 private:
 	string m_speciesName;

@@ -11,7 +11,7 @@ class Bird: public Animal
 public:
 	Bird();
 	Bird(string speciesName);
-	void Action();
+	void Action(); // specify it as virtual
 
 private:
 	string m_speciesName;
