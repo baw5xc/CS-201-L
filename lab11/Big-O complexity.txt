@@ -1,0 +1,6 @@
+1.What are the Big-O complexities of the exercise 1 and 2 of Lab 7?
+
+
+
+The Big-O complexity for lab7 exercise is O(n), because there is only one loop and it is not nested. However the Big-O complexity
+for lab 7 exercise 2 is O(n^2), because it contains one nested loop.
