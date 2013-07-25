@@ -15,7 +15,7 @@ public:
 	void Add(const T item);
 	void Remove(int index);
 	T Get(int index);
-	void IncreaseSize();
+	void IncreaseSize(); // this one should be private
 
 private:
 	int m_size;
@@ -26,7 +26,7 @@ private:
 #endif
 
 template <typename T>
-MyList<T>::MyList(){}
+MyList<T>::MyList(){} // Have the default constructor initialize the private variables with some default value.
 
 
 template <typename T>
@@ -67,5 +67,10 @@ T MyList<T>::Get(int index)
 template <typename T>
 void MyList<T>::IncreaseSize()
 {
-	m_size += 5;
+	// you have to recreate the m_list with extended size.
+	// 1. take a temp array and put the existing m_list items there.(use loop)
+	// 2. delete the  m_list
+	m_size += 5;  // 3.
+	// 4. again create m_list with increased m_size
+	// 5. copy back the items from temp to m_list.(use loop)
 }
