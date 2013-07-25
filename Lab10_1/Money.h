@@ -30,6 +30,7 @@ Money::Money(){}
 Money::Money(double amount)
 {
 	m_amount = amount;
+	// set m_unit variable to it's default value "dollar" or "$".
 }
 
 Money::Money(double amount, string unit)
